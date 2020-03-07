@@ -1,0 +1,4 @@
+.idea
+build/
+.gitignor
+node_modules/

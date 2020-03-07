@@ -1,0 +1,25 @@
+button:focus,textarea:focus{
+    outline: 0px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: rgba(218, 247, 166, 0.3)
+}
+
+textarea{
+    border: 1px solid #2F4F4F;
+    border-radius: 5px;
+    resize: none;
+    padding: 5px;
+
+}
+.form{
+    margin: 0;
+    padding: 0;
+}
