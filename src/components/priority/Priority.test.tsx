@@ -24,15 +24,15 @@ describe('<Priority />', () => {
 
 
     it('Should render 3 elements', () => {
-        expect(wrapper.setProps({...props}).find('div')).toHaveLength(3);
+        expect(wrapper.find('div')).toHaveLength(3);
     });
 
 
     it('Color based on state status', () => {
-        expect(wrapper.setProps({...props}).findWhere(node => node.key() === 'Critical')
+        expect(wrapper.findWhere(node => node.key() === 'Critical')
             .get(0).props.style).toEqual({backgroundColor: "rgba(51, 167, 176, 0.25)"});
 
-        expect(wrapper.setProps({...props}).findWhere(node => node.key() === 'Low')
+        expect(wrapper.findWhere(node => node.key() === 'Low')
             .get(0).props.style).toEqual({backgroundColor: ""});
     });
 });

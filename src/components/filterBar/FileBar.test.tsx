@@ -22,7 +22,7 @@ describe('<FilterBar />', () => {
     let wrapper;
 
     beforeEach(() => {
-        wrapper = shallow(<FilterBar {...props}/>)
+        wrapper = shallow(<FilterBar {...props}/>);
     });
 
     it('Should render 3 elements', () => {
